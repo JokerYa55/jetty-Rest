@@ -19,8 +19,15 @@ public class EntryPoint {
 
     @GET
     @Path("test")
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public String test() {
         return "Test";
+    }
+    
+    @GET
+    @Path("test")
+    @Produces(MediaType.TEXT_HTML)
+    public String test1() {
+        return "Test_1";
     }
 }
